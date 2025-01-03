@@ -1,4 +1,4 @@
-const SizeSVG = 25;
+const SizeSVG = 30;
 
 const SOCIAL_MEDIA_URLS = {
     github: "https://github.com/BoviliusMeidi",
