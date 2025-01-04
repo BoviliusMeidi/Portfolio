@@ -1,3 +1,5 @@
+import { HashLink } from "react-router-hash-link";
+
 const RightBar = ({ isOpen }) => {
   return (
     <div
@@ -6,17 +8,15 @@ const RightBar = ({ isOpen }) => {
       }`}
     >
       <a href="/">
-        <h1>HOME</h1>
+        HOME
       </a>
       <a href="/projects">
-        <h1>PROJECTS</h1>
+        PROJECTS
       </a>
       <a href="/about">
-        <h1>ABOUT ME</h1>
+        ABOUT ME
       </a>
-      <a href="#contact">
-        <h1>CONTACT</h1>
-      </a>
+      <HashLink to="/#contact"> CONTACT </HashLink>
     </div>
   );
 };
