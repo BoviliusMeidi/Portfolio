@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import SocialMedia from "../common/SocialMedia";
 import Logo from "../../assets/images/Logo.svg";
 
@@ -15,8 +16,8 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-4">
           <h2 className="main-font-semibold letter-spacing-10">
-            <a href="/">HOME</a> | <a href="/projects">PROJECTS</a> | <a href="/about">ABOUT</a>{" "}
-            | <a href="#contact">CONTACT</a>
+            <a href="/">HOME</a> | <a href="/projects">PROJECTS</a> | <a href="/about">ABOUT </a> 
+            | <HashLink to="/#contact"> CONTACT </HashLink>
           </h2>
           <p className="second-font-light">
             <a href="">&copy; 2025 Bovilius Meidi.</a> All rights reserved
