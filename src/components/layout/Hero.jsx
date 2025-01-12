@@ -39,7 +39,7 @@ const Hero = ({ id }) => {
             <a href="/about">
               <Title title={"BOVILIUS MEIDI"} />
             </a>
-            <Link link={"/"} text={"Download CV"}>
+            <Link link={"/CV.pdf"} text={"Download CV"}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="30"
