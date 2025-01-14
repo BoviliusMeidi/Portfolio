@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
+  font-family: "Poppins", serif;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #F7F7F7;
+  background-color: #2B1216;
+
+  --main-font: "Poppins", serif;
+  --second-font: "Roboto", serif;
+  --third-font: "Arapey", serif;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,56 +19,74 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
+.rightBar {
+  font-family: var(--third-font);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6.375rem;
+  letter-spacing: 0.3rem;
+}
+
+/* Poppins */
+.main-font {
+  font-family: "Poppins", serif;
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  font-style: normal;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.main-font-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.main-font-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* Roboto */
+.second-font-light {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.second-font-bold-italic {
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.second-font-bold {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.second-font-black {
+  font-family: "Roboto", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.letter-spacing-5 {
+  letter-spacing: 0.1rem;
+}
+
+.letter-spacing-10 {
+  letter-spacing: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .rightBar {
+    font-size: 4rem;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+}
+
+@media (max-width: 480px) {
+  .rightBar {
+    font-size: 2.5rem;
   }
 }
