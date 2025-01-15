@@ -16,8 +16,8 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-4">
           <h2 className="main-font-semibold letter-spacing-10">
-            <a href="/Portfolio/">HOME</a> | <a href="/Portfolio/projects">PROJECTS</a> | <a href="/Portfolio/about">ABOUT </a> 
-            | <HashLink to="/Portfolio/#contact"> CONTACT </HashLink>
+            <a href="/">HOME</a> | <a href="/projects">PROJECTS</a> | <a href="/about">ABOUT </a> 
+            | <HashLink to="/#contact"> CONTACT </HashLink>
           </h2>
           <p className="second-font-light">
             <a href="">&copy; 2025 Bovilius Meidi.</a> All rights reserved

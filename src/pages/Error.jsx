@@ -30,21 +30,21 @@ export function Error() {
         <Button
           color="white"
           className="main-font w-full md:w-[10rem]"
-          onClick={() => navigate("/Portfolio/")}
+          onClick={() => navigate("/")}
         >
           home
         </Button>
         <Button
           color="white"
           className="main-font w-full md:w-[10rem]"
-          onClick={() => navigate("/Portfolio/projects")}
+          onClick={() => navigate("/projects")}
         >
           projects
         </Button>
         <Button
           color="white"
           className="main-font w-full md:w-[10rem]"
-          onClick={() => navigate("/Portfolio/about")}
+          onClick={() => navigate("/about")}
         >
           about
         </Button>

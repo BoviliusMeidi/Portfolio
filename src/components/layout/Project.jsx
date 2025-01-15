@@ -27,7 +27,7 @@ const Project = ({ imageSize, isHiddenLink, id }) => {
               subTitle={"A Showcase of Dedication, Skill, and Innovation."}
             />
             <Link
-              link={"/Portfolio/projects"}
+              link={"/projects"}
               text={"Show Me More"}
               isHidden={isHiddenLink}
             />
