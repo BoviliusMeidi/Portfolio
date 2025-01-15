@@ -34,7 +34,7 @@ const About = ({ imageSize, isHiddenLink, id }) => {
               subTitle={"Crafting My Journey in Technology and Innovation."}
             />
             <Link
-              link={"/about"}
+              link={"/Portfolio/about"}
               text={"Show Me More"}
               isHidden={isHiddenLink}
             />

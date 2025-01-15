@@ -7,16 +7,16 @@ const RightBar = ({ isOpen }) => {
         isOpen ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <a href="/">
+      <a href="/Portfolio/">
         HOME
       </a>
-      <a href="/projects">
+      <a href="/Portfolio/projects">
         PROJECTS
       </a>
-      <a href="/about">
+      <a href="/Portfolio/about">
         ABOUT ME
       </a>
-      <HashLink to="/#contact"> CONTACT </HashLink>
+      <HashLink to="/Portfolio/#contact"> CONTACT </HashLink>
     </div>
   );
 };

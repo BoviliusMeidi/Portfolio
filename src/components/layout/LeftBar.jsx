@@ -13,7 +13,7 @@ const LeftBar = () => {
     if (window.history.length > 1) {
       navigate(-1);
     } else {
-      navigate("/");
+      navigate("/Portfolio/");
     }
   };
 
@@ -58,7 +58,7 @@ const LeftBar = () => {
 
   return (
     <div className="z-40 fixed bottom-0 left-0 right-0 h-20 lg:top-0 lg:h-full lg:w-24 text-white flex flex-row lg:flex-col lg:justify-between justify-center items-center lg:items-start lg:pl-8 lg:pt-36 ">
-      {location.pathname !== "/" && (
+      {location.pathname !== "/Portfolio/" && (
         <button onClick={handleBack}>
           <svg
             width="50"
@@ -74,7 +74,7 @@ const LeftBar = () => {
           </svg>
         </button>
       )}
-      {location.pathname === "/" && (
+      {location.pathname === "/Portfolio/" && (
         <div className="flex flex-col gap-8 lg:pt-36 -rotate-90 lg:rotate-0">
           <a href="#hero">
             <img src={activeBarIndex === 0 ? BarActive : BarUnactive} alt="" />

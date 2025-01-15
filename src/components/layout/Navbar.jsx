@@ -16,7 +16,7 @@ const Navbar = () => {
     <>
       <header className="">
         <nav className="p-6 fixed w-full bg-transparent top-0 left-0 z-50 flex justify-between items-center">
-          <a href="/">
+          <a href="/Portfolio/">
             <img
               src={Logo}
               alt="Logo Bovilius Meidi"
