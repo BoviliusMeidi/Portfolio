@@ -1,6 +1,8 @@
 import { Carousel, IconButton } from "@material-tailwind/react";
 import WayToRinjaniPicture from "../../assets/images/projects/WayToRinjaniPicture.png";
 import GoDecPicture from "../../assets/images/projects/GoDecPicture.png";
+import PharmaCheckPicture from "../../assets/images/projects/PharmaCheckPicture.png"
+import SudokuBoviPicture from "../../assets/images/projects/SudokuBoviPicture.png";
 
 export function CarouselTransition() {
   return (
@@ -20,6 +22,16 @@ export function CarouselTransition() {
       <img
         src={GoDecPicture}
         alt="image 2"
+        className="w-full aspect-[16/9] object-cover opacity-65"
+      />
+      <img
+        src={PharmaCheckPicture}
+        alt="image 3"
+        className="w-full aspect-[16/9] object-cover opacity-65"
+      />
+      <img
+        src={SudokuBoviPicture}
+        alt="image 4"
         className="w-full aspect-[16/9] object-cover opacity-65"
       />
     </Carousel>
