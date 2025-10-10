@@ -2,10 +2,14 @@ import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import Project from "../components/layout/Project";
 import MyProject from "../components/layout/MyProject";
-import WayToRinjaniLanguage from "../assets/images/projects/WayToRinjaniLanguage.svg";
-import GoDecLanguage from "../assets/images/projects/GoDecLanguage.svg";
 import WayToRinjaniPicture from "../assets/images/projects/WayToRinjaniPicture.png";
+import WayToRinjaniLanguage from "../assets/images/projects/WayToRinjaniLanguage.svg";
 import GoDecPicture from "../assets/images/projects/GoDecPicture.png";
+import GoDecLanguage from "../assets/images/projects/GoDecLanguage.svg";
+import PharmaCheckPicture from "../assets/images/projects/PharmaCheckPicture.png"
+import PharmaCheckLanguage from "../assets/images/projects/PharmaCheckLanguage.svg"
+import SudokuBoviPicture from "../assets/images/projects/SudokuBoviPicture.png";
+import SudokuBoviLanguage from "../assets/images/projects/SudokuBoviLanguage.svg";
 
 const Projects = () => {
   return (
@@ -53,6 +57,52 @@ const Projects = () => {
           <img
             src={GoDecPicture}
             alt="Screenshot of GoDec"
+            className="h-1/2 md:h-screen object-cover opacity-55"
+          />
+        </div>
+      </MyProject>
+      <MyProject
+      backgroundColor={"bg-primary"}
+        title={"PharmaCheck"}
+        category={"Software Development"}
+        number={"03"}
+        positionNumber={"right"}
+        position={"start"}
+        description={
+          "PharmaCheck is a website that provides reliable information for healthcare professionals and students. It connects to the Indonesian Ministry of Health's BPOM API to validate and display data on legally distributed medicines and medical devices."
+        }
+        noSite={false}
+        linkSite={"https://pharma-check-wheat.vercel.app/"}
+        linkGithub={"https://github.com/BoviliusMeidi/PharmaCheck"}
+        languagePicture={PharmaCheckLanguage}
+      >
+        <div className="absolute z-0 bottom-0 right-[-18%] md:w-2/3 overflow-hidden">
+          <img
+            src={PharmaCheckPicture}
+            alt="Screenshot of PharmaCheck"
+            className="h-1/2 md:h-screen object-cover opacity-55"
+          />
+        </div>
+      </MyProject>
+      <MyProject
+      backgroundColor={"bg-secondary"}
+        title={"Sudoku.Bovi"}
+        category={"Web Development"}
+        number={"04"}
+        positionNumber={"left"}
+        position={"end"}
+        description={
+          "Sudoku.Bovi is a web-based Sudoku game built with Next.js and Tailwind CSS, showcasing my skills in responsive design and interactive UI development. Deployed on Vercel, it offers a smooth puzzle experience across devices."
+        }
+        noSite={false}
+        linkSite={"https://sudoku-web-psi.vercel.app/"}
+        linkGithub={"https://github.com/BoviliusMeidi/sudoku-web"}
+        languagePicture={SudokuBoviLanguage}
+      >
+        <div className="absolute z-0 bottom-0 left-[-16%] md:w-2/3 overflow-hidden">
+          <img
+            src={SudokuBoviPicture}
+            alt="Screenshot of SudokuBovi"
             className="h-1/2 md:h-screen object-cover opacity-55"
           />
         </div>
