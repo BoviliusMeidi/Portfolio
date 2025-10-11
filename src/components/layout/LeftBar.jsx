@@ -7,7 +7,7 @@ const LeftBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [activeBarIndex, setActiveBarIndex] = useState(0);
-  const [isScrolled] = useState(0);
+  const [isScrolled, setIsScrolled] = useState(0);
 
   const handleBack = () => {
     if (window.history.length > 1) {
@@ -42,9 +42,19 @@ const LeftBar = () => {
       setActiveBarIndex(activeIndex);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    const handleScrolldown = () => {
+      if (window.scrollY > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScrolldown);
+
+    return () =>
+      window.removeEventListener("scroll", handleScroll, handleScrolldown);
   }, []);
 
   return (
