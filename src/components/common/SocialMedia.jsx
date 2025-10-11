@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 const SizeSVG = 30;
 
 const SOCIAL_MEDIA_URLS = {
@@ -54,5 +55,9 @@ const SocialMedia = ({isHidden}) => {
     </div>
   );
 };
+
+SocialMedia.propTypes = {
+  isHidden : PropTypes.bool,
+}
 
 export default SocialMedia;
