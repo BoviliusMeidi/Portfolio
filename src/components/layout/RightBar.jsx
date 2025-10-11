@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { HashLink } from "react-router-hash-link";
 
 const RightBar = ({ isOpen }) => {
@@ -20,5 +21,9 @@ const RightBar = ({ isOpen }) => {
     </div>
   );
 };
+
+RightBar.propTypes = {
+  isOpen : PropTypes.bool,
+}
 
 export default RightBar;

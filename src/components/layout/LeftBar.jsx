@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import BarActive from "../../assets/images/BarActive.svg";
 import BarUnactive from "../../assets/images/BarUnactive.svg";
@@ -7,7 +7,7 @@ const LeftBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [activeBarIndex, setActiveBarIndex] = useState(0);
-  const [isScrolled, setIsScrolled] = useState(0);
+  const [isScrolled] = useState(0);
 
   const handleBack = () => {
     if (window.history.length > 1) {
@@ -42,24 +42,15 @@ const LeftBar = () => {
       setActiveBarIndex(activeIndex);
     };
 
-    const handleScrolldown = () => {
-        if (window.scrollY > 100) {
-          setIsScrolled(true);
-        } else {
-          setIsScrolled(false);
-        }
-      };
-
     window.addEventListener("scroll", handleScroll);
-    window.addEventListener("scroll", handleScrolldown);
 
-    return () => window.removeEventListener("scroll", handleScroll, handleScrolldown);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div className="z-40 fixed bottom-0 left-0 right-0 h-20 lg:top-0 lg:h-full lg:w-24 text-white flex flex-row lg:flex-col lg:justify-between justify-center items-center lg:items-start lg:pl-8 lg:pt-36 ">
+    <div className="z-40 fixed bottom-0 left-0 right-0 h-5 lg:top-0 lg:h-full lg:w-24 text-white flex flex-row lg:flex-col lg:justify-between justify-center items-center lg:items-start lg:pl-8 lg:pt-36 ">
       {location.pathname !== "/" && (
-        <button onClick={handleBack}>
+        <button onClick={handleBack} className="hidden md:block">
           <svg
             width="50"
             height="49"
@@ -97,11 +88,13 @@ const LeftBar = () => {
         viewBox="0 0 38 312"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className={`hidden lg:block fixed left-10 transform duration-1000 ${ isScrolled ? "bottom-[-80px] opacity-0" : "bottom-0 opacity-100"}`}
+        className={`hidden lg:block fixed left-10 transform duration-1000 ${
+          isScrolled ? "bottom-[-80px] opacity-0" : "bottom-0 opacity-100"
+        }`}
       >
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M16 312H19.88L19.88 210.75H16L16 312Z"
           fill="white"
         />
