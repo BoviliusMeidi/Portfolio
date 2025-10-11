@@ -6,19 +6,19 @@ import WayToRinjaniPicture from "../assets/images/projects/WayToRinjaniPicture.p
 import WayToRinjaniLanguage from "../assets/images/projects/WayToRinjaniLanguage.svg";
 import GoDecPicture from "../assets/images/projects/GoDecPicture.png";
 import GoDecLanguage from "../assets/images/projects/GoDecLanguage.svg";
-import PharmaCheckPicture from "../assets/images/projects/PharmaCheckPicture.png"
-import PharmaCheckLanguage from "../assets/images/projects/PharmaCheckLanguage.svg"
+import PharmaCheckPicture from "../assets/images/projects/PharmaCheckPicture.png";
+import PharmaCheckLanguage from "../assets/images/projects/PharmaCheckLanguage.svg";
 import SudokuBoviPicture from "../assets/images/projects/SudokuBoviPicture.png";
 import SudokuBoviLanguage from "../assets/images/projects/SudokuBoviLanguage.svg";
 
 const Projects = () => {
   return (
     <>
-    <Navbar/>
-      <Project imageSize={"xl:w-2/3"} isHiddenLink={true}/>
+      <Navbar />
+      <Project imageSize={"xl:w-2/3"} isHiddenLink={true} />
       <MyProject
-      backgroundColor={"bg-primary"}
-        title={"WAY TO RINJANI"}
+        backgroundColor={"bg-primary"}
+        title={"Way To Rinjani"}
         category={"Web Development | Front End"}
         number={"01"}
         positionNumber={"right"}
@@ -40,8 +40,8 @@ const Projects = () => {
         </div>
       </MyProject>
       <MyProject
-      backgroundColor={"bg-secondary"}
-        title={"GODEC"}
+        backgroundColor={"bg-secondary"}
+        title={"GoDec"}
         category={"Mobile Development"}
         number={"02"}
         positionNumber={"left"}
@@ -62,7 +62,7 @@ const Projects = () => {
         </div>
       </MyProject>
       <MyProject
-      backgroundColor={"bg-primary"}
+        backgroundColor={"bg-primary"}
         title={"PharmaCheck"}
         category={"Software Development"}
         number={"03"}
@@ -85,7 +85,7 @@ const Projects = () => {
         </div>
       </MyProject>
       <MyProject
-      backgroundColor={"bg-secondary"}
+        backgroundColor={"bg-secondary"}
         title={"Sudoku.Bovi"}
         category={"Web Development"}
         number={"04"}
@@ -99,7 +99,7 @@ const Projects = () => {
         linkGithub={"https://github.com/BoviliusMeidi/sudoku-web"}
         languagePicture={SudokuBoviLanguage}
       >
-        <div className="absolute z-0 bottom-0 left-[-16%] md:w-2/3 overflow-hidden">
+        <div className="absolute z-0 bottom-0 left-[-18%] md:w-2/3 overflow-hidden">
           <img
             src={SudokuBoviPicture}
             alt="Screenshot of SudokuBovi"
@@ -107,7 +107,7 @@ const Projects = () => {
           />
         </div>
       </MyProject>
-      <Footer/>
+      <Footer />
     </>
   );
 };

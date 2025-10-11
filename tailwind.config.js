@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line no-undef
 const withMT = require("@material-tailwind/react/utils/withMT");
 
 export default withMT({
@@ -19,7 +20,7 @@ export default withMT({
         '128': '32rem',
       },
       fontSize: {
-        'number': '12rem',
+        'number': '9rem',
       },
       animation: {
         popin: 'popin 3s ease-out',

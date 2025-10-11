@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import PropTypes from "prop-types";
+import { useRef } from "react";
 import MainLayout from "./MainLayout";
 import Quote from "../common/Quote";
 import Title from "../common/Title";
@@ -15,7 +16,7 @@ const Project = ({ imageSize, isHiddenLink, id }) => {
     <MainLayout backgroundColor={backgroundColor}>
       <div
         ref={projectRef}
-        className={`relative flex flex-col justify-center items-center w-full gap-8 transition-opacity duration-500 ease-in-out ${
+        className={`relative flex flex-col py-28 md:py-0 justify-normal md:justify-center items-center w-full gap-2 transition-opacity duration-500 ease-in-out ${
           isVisible ? "animate-popin" : "opacity-0"
         }`}
         id={id}
@@ -44,6 +45,12 @@ const Project = ({ imageSize, isHiddenLink, id }) => {
       </div>
     </MainLayout>
   );
+};
+
+Project.propTypes = {
+  imageSize: PropTypes.string,
+  isHiddenLink: PropTypes.string,
+  id: PropTypes.string,
 };
 
 export default Project;

@@ -1,3 +1,5 @@
+import PropTypes from "prop-types"
+
 const MainLayout = ({ children, backgroundColor, center }) => {
   return (
     <div
@@ -9,5 +11,11 @@ const MainLayout = ({ children, backgroundColor, center }) => {
     </div>
   );
 };
+
+MainLayout.propTypes = {
+  children : PropTypes.node,
+  backgroundColor : PropTypes.string,
+  center : PropTypes.string
+}
 
 export default MainLayout;

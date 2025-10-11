@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import PropTypes from "prop-types";
+import { useRef } from "react";
 import Title from "../common/Title";
 import SubTitle from "../common/SubTitle";
 import Link from "../common/Link";
@@ -23,10 +24,10 @@ const MyProject = ({
   const projectRef = useRef(null);
   const isVisible = useIntersectionObserver(projectRef, { threshold: 0.1 });
   return (
-    <MainLayout className="justify-end" backgroundColor={backgroundColor}>
+    <MainLayout backgroundColor={backgroundColor}>
       <div
         ref={projectRef}
-        className={`pt-24 pb-12 flex flex-col md:gap-10 gap-4 justify-start md:justify-around items-${position}`}
+        className={`flex flex-col py-6 md:py-0  md:gap-8 gap-4 justify-start md:justify-center items-${position}`}
       >
         <div
           className={`z-10 transition-opacity ease-in-out ${
@@ -71,7 +72,7 @@ const MyProject = ({
           </div>
           <div className={`flex justify-${position}`}>
             <p
-              className={`z-10 mt-12 second-font-bold letter-spacing-5 md:w-1/3 text-xl text-${position}`}
+              className={`z-10 mt-6 md:mt-12 second-font-bold letter-spacing-5 md:w-1/2 text-sm md:text-xl text-${position}`}
             >
               {description}
             </p>
@@ -80,7 +81,7 @@ const MyProject = ({
         <img
           src={languagePicture}
           alt="Programming Language Used"
-          className={`z-10 transition-opacity ease-in-out ${
+          className={`z-10 transition-opacity ease-in-out w-40 md:w-auto ${
             isVisible ? "animate-popin" : "opacity-50"
           }`}
         />
@@ -94,4 +95,20 @@ const MyProject = ({
     </MainLayout>
   );
 };
+
+MyProject.propTypes = {
+  children: PropTypes.node,
+  backgroundColor: PropTypes.string,
+  title: PropTypes.string,
+  category: PropTypes.string,
+  number: PropTypes.string,
+  positionNumber: PropTypes.string,
+  position: PropTypes.string,
+  description: PropTypes.string,
+  noSite: PropTypes.bool,
+  linkSite: PropTypes.string,
+  linkGithub: PropTypes.string,
+  languagePicture: PropTypes.string,
+};
+
 export default MyProject;
