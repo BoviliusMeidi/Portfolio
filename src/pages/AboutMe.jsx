@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import Navbar from '../components/layout/Navbar';
 import Footer from "../components/layout/Footer";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
@@ -20,7 +20,7 @@ const AboutMe = () => {
   return (
     <>
     <Navbar/>
-      <About imageSize={"h-128"} isHiddenLink={true}/>
+      <About imageSize={"h-72 md:h-128"} isHiddenLink={true}/>
       <MainLayout backgroundColor={"bg-secondary"}>
         <div ref={aboutRef}
         className={`flex justify-end md:justify-center mb-32 md:mt-0 flex-col items-start gap-0 z-10 transition-opacity duration-500 ease-in-out ${
@@ -31,7 +31,7 @@ const AboutMe = () => {
           <SubTitle
             subTitle={"Crafting Journey in Technology and Innovation."}
           />
-          <p className="second-font-bold text-xl w-full md:w-1/2">
+          <p className="second-font-bold text-xs md:text-xl w-full md:w-1/2">
             Born in 2005, I am currently in my fourth semester of the
             Informatics Engineering major. In addition to learning about
             technology, I also hobby of play badminton, which teaches me the
@@ -65,11 +65,11 @@ const AboutMe = () => {
             alt=""
             className="hidden md:block absolute top-16 w-96"
           />
-          <p className="mb-5 md:absolute text-2xl md:text-5xl md:w-1/2 md:top-80 md:left-1/2 md:transform md:-translate-x-1/3">
-            I haven't mastered every skill yet, but I'm committed to mastering
+          <p className="mb-5 md:absolute text-xl md:text-5xl md:w-1/2 md:top-80 md:left-1/2 md:transform md:-translate-x-1/3">
+            I haven&apos;t mastered every skill yet, but I&apos;m committed to mastering
             them when needed.
           </p>
-          <img src={Skill} alt="" className="md:hidden w-96" />
+          <img src={Skill} alt="" className="md:hidden w-60 mt-12" />
           <img
             src={SkillRight}
             alt=""
