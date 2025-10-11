@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import Link from "../common/Link";
 import MainLayout from "./MainLayout";
 import Title from "../common/Title";
@@ -10,7 +11,7 @@ const Hero = ({ id }) => {
   return (
     <MainLayout backgroundColor={backgroundColor} center={true}>
       <div
-        className="relative flex flex-col justify-center items-center "
+        className="relative flex flex-col py-28 md:py-0 md:justify-center items-center "
         id={id}
       >
         <div
@@ -19,7 +20,7 @@ const Hero = ({ id }) => {
           <img
             src={HeroImage}
             alt="Bovilius Meidi"
-            className="w-96 rounded-full "
+            className="w-60 md:w-96 rounded-full "
           />
           <div className="md:text-left w-full">
             <TypeAnimation
@@ -58,6 +59,10 @@ const Hero = ({ id }) => {
       </div>
     </MainLayout>
   );
+};
+
+Hero.propTypes = {
+  id: PropTypes.string,
 };
 
 export default Hero;

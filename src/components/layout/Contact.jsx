@@ -1,10 +1,11 @@
-import React, { useRef } from "react";
+import PropTypes from "prop-types";
+import { useRef } from "react";
 import MainLayout from "./MainLayout";
 import Quote from "../common/Quote";
 import Title from "../common/Title";
 import SocialMedia from "../common/SocialMedia";
 import SubTitle from "../common/SubTitle";
-import ContactImage from "../../assets/images/Contact-BoviliusMeidi.png"
+import ContactImage from "../../assets/images/Contact-BoviliusMeidi.png";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 const Contact = ({ id }) => {
@@ -15,12 +16,12 @@ const Contact = ({ id }) => {
     <MainLayout backgroundColor={backgroundColor}>
       <div
         ref={contactRef}
-        className={`relative flex flex-col justify-center items-center w-full gap-8 transition-opacity duration-500 ease-in-out ${
+        className={`relative flex flex-col py-28 md:py-0 md:justify-center items-center w-full gap-8 transition-opacity duration-500 ease-in-out ${
           isVisible ? "animate-popin" : "opacity-50"
         }`}
         id={id}
       >
-        <div className="flex items-center justify-center xl:justify-start w-full">
+        <div className="flex items-center mb-2 justify-center xl:justify-start w-full">
           <div className="z-10">
             <Title title={"GET IN TOUCH"} />
             <a href="">
@@ -30,12 +31,20 @@ const Contact = ({ id }) => {
           </div>
         </div>
         <div className="xl:absolute xl:right-0">
-          <img src={ContactImage} alt="" className="relative w-2/3 ml-auto mr-auto xl:mr-0"/>
+          <img
+            src={ContactImage}
+            alt=""
+            className="relative w-2/3 ml-auto mr-auto xl:mr-0"
+          />
         </div>
         <Quote quote={"Simplicity is the soul of efficiency."} />
       </div>
     </MainLayout>
   );
+};
+
+Contact.propTypes = {
+  id: PropTypes.string,
 };
 
 export default Contact;

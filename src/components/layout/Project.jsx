@@ -22,7 +22,7 @@ const Project = ({ imageSize, isHiddenLink, id }) => {
         id={id}
       >
         <div className="flex items-center w-full">
-          <div className="z-10">
+          <div className="z-10 mb-6">
             <Title title={"PROJECTS"} />
             <SubTitle
               subTitle={"A Showcase of Dedication, Skill, and Innovation."}

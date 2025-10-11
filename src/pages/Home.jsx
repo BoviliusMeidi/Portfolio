@@ -11,7 +11,7 @@ const Home = () => {
       <Navbar />
       <Hero id="hero"/>
       <Project id="projects" imageSize={"xl:w-2/4"} isHiddenLink={false}/>
-      <About id="about" imageSize={"h-96"}/>
+      <About id="about" imageSize={"h-60 md:h-96"}/>
       <Contact id="contact"/>
       <Footer />
     </>
