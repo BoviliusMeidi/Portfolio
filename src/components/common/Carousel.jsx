@@ -3,6 +3,7 @@ import WayToRinjaniPicture from "../../assets/images/projects/WayToRinjaniPictur
 import GoDecPicture from "../../assets/images/projects/GoDecPicture.png";
 import PharmaCheckPicture from "../../assets/images/projects/PharmaCheckPicture.png"
 import SudokuBoviPicture from "../../assets/images/projects/SudokuBoviPicture.png";
+import TicTacToeBoviPicture from "../../assets/images/projects/TicTacToeBoviPicture.png";
 
 export function CarouselTransition() {
   return (
@@ -31,6 +32,11 @@ export function CarouselTransition() {
       />
       <img
         src={SudokuBoviPicture}
+        alt="image 4"
+        className="w-full aspect-[16/9] object-cover opacity-65"
+      />
+      <img
+        src={TicTacToeBoviPicture}
         alt="image 4"
         className="w-full aspect-[16/9] object-cover opacity-65"
       />

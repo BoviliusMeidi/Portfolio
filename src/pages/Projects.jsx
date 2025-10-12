@@ -10,6 +10,8 @@ import PharmaCheckPicture from "../assets/images/projects/PharmaCheckPicture.png
 import PharmaCheckLanguage from "../assets/images/projects/PharmaCheckLanguage.svg";
 import SudokuBoviPicture from "../assets/images/projects/SudokuBoviPicture.png";
 import SudokuBoviLanguage from "../assets/images/projects/SudokuBoviLanguage.svg";
+import TicTacToeBoviPicture from "../assets/images/projects/TicTacToeBoviPicture.png";
+import TicTacToeBoviLanguage from "../assets/images/projects/TicTacToeBoviLanguage.svg";
 
 const Projects = () => {
   return (
@@ -103,6 +105,29 @@ const Projects = () => {
           <img
             src={SudokuBoviPicture}
             alt="Screenshot of SudokuBovi"
+            className="h-1/2 md:h-screen object-cover opacity-55"
+          />
+        </div>
+      </MyProject>
+      <MyProject
+        backgroundColor={"bg-primary"}
+        title={"TicTacToe.Bovi"}
+        category={"Web Development"}
+        number={"05"}
+        positionNumber={"right"}
+        position={"start"}
+        description={
+          "TicTacToe.Bovi is a web-based TicTacToe game built with Next.js and Tailwind CSS, showcasing my skills in responsive design and interactive UI development. Deployed on Vercel, it offers a smooth puzzle experience across devices."
+        }
+        noSite={false}
+        linkSite={"https://tictactoe-web-nine.vercel.app/"}
+        linkGithub={"https://github.com/BoviliusMeidi/tictactoe-web"}
+        languagePicture={TicTacToeBoviLanguage}
+      >
+        <div className="absolute z-0 bottom-0 right-[-18%] md:w-2/3 overflow-hidden">
+          <img
+            src={TicTacToeBoviPicture}
+            alt="Screenshot of PharmaCheck"
             className="h-1/2 md:h-screen object-cover opacity-55"
           />
         </div>
