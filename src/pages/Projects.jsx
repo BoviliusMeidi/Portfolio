@@ -1,17 +1,20 @@
+// Components
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import Project from "../components/layout/Project";
 import MyProject from "../components/layout/MyProject";
+// Language
+import HTMLCSSJS from "../assets/images/projects/HTML-CSS-JS.svg";
+import DartFlutterFirebase from "../assets/images/projects/Dart-Flutter-Firebase.svg";
+import NextJSSupabaseVercel from "../assets/images/projects/NextJS-Supabase-Vercel.svg";
+import NextJSTailwindVercel from "../assets/images/projects/NextJS-Tailwind-Vercel.svg";
+// Preview
 import WayToRinjaniPicture from "../assets/images/projects/WayToRinjaniPicture.png";
-import WayToRinjaniLanguage from "../assets/images/projects/WayToRinjaniLanguage.svg";
 import GoDecPicture from "../assets/images/projects/GoDecPicture.png";
-import GoDecLanguage from "../assets/images/projects/GoDecLanguage.svg";
 import PharmaCheckPicture from "../assets/images/projects/PharmaCheckPicture.png";
-import PharmaCheckLanguage from "../assets/images/projects/PharmaCheckLanguage.svg";
 import SudokuBoviPicture from "../assets/images/projects/SudokuBoviPicture.png";
-import SudokuBoviLanguage from "../assets/images/projects/SudokuBoviLanguage.svg";
 import TicTacToeBoviPicture from "../assets/images/projects/TicTacToeBoviPicture.png";
-import TicTacToeBoviLanguage from "../assets/images/projects/TicTacToeBoviLanguage.svg";
+import InspireFlowPicture from "../assets/images/projects/InspireFlowPicture.png";
 
 const Projects = () => {
   return (
@@ -31,7 +34,7 @@ const Projects = () => {
         noSite={false}
         linkSite={"https://waytorinjani.com"}
         linkGithub={"https://github.com/hanseehhh/waytorinjani"}
-        languagePicture={WayToRinjaniLanguage}
+        languagePicture={HTMLCSSJS}
       >
         <div className="absolute z-0 bottom-0 right-[-18%] md:w-2/3 overflow-hidden">
           <img
@@ -53,7 +56,7 @@ const Projects = () => {
         }
         noSite={true}
         linkGithub={"https://github.com/HengkyLaurencio/GoDec"}
-        languagePicture={GoDecLanguage}
+        languagePicture={DartFlutterFirebase}
       >
         <div className="absolute z-0 bottom-0 left-0 md:w-2/3 overflow-hidden">
           <img
@@ -76,7 +79,7 @@ const Projects = () => {
         noSite={false}
         linkSite={"https://pharma-check-wheat.vercel.app/"}
         linkGithub={"https://github.com/BoviliusMeidi/PharmaCheck"}
-        languagePicture={PharmaCheckLanguage}
+        languagePicture={NextJSSupabaseVercel}
       >
         <div className="absolute z-0 bottom-0 right-[-18%] md:w-2/3 overflow-hidden">
           <img
@@ -99,7 +102,7 @@ const Projects = () => {
         noSite={false}
         linkSite={"https://sudoku-web-psi.vercel.app/"}
         linkGithub={"https://github.com/BoviliusMeidi/sudoku-web"}
-        languagePicture={SudokuBoviLanguage}
+        languagePicture={NextJSTailwindVercel}
       >
         <div className="absolute z-0 bottom-0 left-[-18%] md:w-2/3 overflow-hidden">
           <img
@@ -122,12 +125,35 @@ const Projects = () => {
         noSite={false}
         linkSite={"https://tictactoe-web-nine.vercel.app/"}
         linkGithub={"https://github.com/BoviliusMeidi/tictactoe-web"}
-        languagePicture={TicTacToeBoviLanguage}
+        languagePicture={NextJSTailwindVercel}
       >
         <div className="absolute z-0 bottom-0 right-[-18%] md:w-2/3 overflow-hidden">
           <img
             src={TicTacToeBoviPicture}
             alt="Screenshot of PharmaCheck"
+            className="h-1/2 md:h-screen object-cover opacity-55"
+          />
+        </div>
+      </MyProject>
+      <MyProject
+        backgroundColor={"bg-secondary"}
+        title={"InspireFlow"}
+        category={"Web Development"}
+        number={"06"}
+        positionNumber={"left"}
+        position={"end"}
+        description={
+          "InspireFlow Web is a minimalist and elegant web application that displays daily and random inspirational quotes to brighten your day.Built with Next.js, and Tailwind CSS, it offers a smooth, responsive experience designed to motivate and uplift users with every visit."
+        }
+        noSite={false}
+        linkSite={"https://inspireflow-web.vercel.app/"}
+        linkGithub={"https://github.com/BoviliusMeidi/inspireflow-web"}
+        languagePicture={NextJSTailwindVercel}
+      >
+        <div className="absolute z-0 bottom-0 left-[-18%] md:w-2/3 overflow-hidden">
+          <img
+            src={InspireFlowPicture}
+            alt="Screenshot of InspireFlow"
             className="h-1/2 md:h-screen object-cover opacity-55"
           />
         </div>
