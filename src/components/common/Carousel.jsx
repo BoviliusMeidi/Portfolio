@@ -4,6 +4,7 @@ import GoDecPicture from "../../assets/images/projects/GoDecPicture.png";
 import PharmaCheckPicture from "../../assets/images/projects/PharmaCheckPicture.png"
 import SudokuBoviPicture from "../../assets/images/projects/SudokuBoviPicture.png";
 import TicTacToeBoviPicture from "../../assets/images/projects/TicTacToeBoviPicture.png";
+import InspireFlowPicture from "../../assets/images/projects/InspireFlowPicture.png";
 
 export function CarouselTransition() {
   return (
@@ -17,27 +18,32 @@ export function CarouselTransition() {
     >
       <img
         src={WayToRinjaniPicture}
-        alt="image 1"
+        alt="Way To Rinjani Picture"
         className="w-full aspect-[16/9] object-cover opacity-65"
       />
       <img
         src={GoDecPicture}
-        alt="image 2"
+        alt="GoDec Picture"
         className="w-full aspect-[16/9] object-cover opacity-65"
       />
       <img
         src={PharmaCheckPicture}
-        alt="image 3"
+        alt="PharmaCheck Picture"
         className="w-full aspect-[16/9] object-cover opacity-65"
       />
       <img
         src={SudokuBoviPicture}
-        alt="image 4"
+        alt="SudokuBovi Picture"
         className="w-full aspect-[16/9] object-cover opacity-65"
       />
       <img
         src={TicTacToeBoviPicture}
-        alt="image 4"
+        alt="TicTacToeBovi Picture"
+        className="w-full aspect-[16/9] object-cover opacity-65"
+      />
+      <img
+        src={InspireFlowPicture}
+        alt="Inspire Flow Picture"
         className="w-full aspect-[16/9] object-cover opacity-65"
       />
     </Carousel>
