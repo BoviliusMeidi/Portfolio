@@ -5,6 +5,7 @@ import PharmaCheckPicture from "../../assets/images/projects/PharmaCheckPicture.
 import SudokuBoviPicture from "../../assets/images/projects/SudokuBoviPicture.png";
 import TicTacToeBoviPicture from "../../assets/images/projects/TicTacToeBoviPicture.png";
 import InspireFlowPicture from "../../assets/images/projects/InspireFlowPicture.png";
+import BadmintonScorePicture from "../../assets/images/projects/BadmintonScorePicture.png";
 
 export function CarouselTransition() {
   return (
@@ -19,32 +20,37 @@ export function CarouselTransition() {
       <img
         src={WayToRinjaniPicture}
         alt="Way To Rinjani Picture"
-        className="w-full aspect-[16/9] object-cover opacity-65"
+        className="w-full aspect-[16/9] object-contain opacity-65"
       />
       <img
         src={GoDecPicture}
         alt="GoDec Picture"
-        className="w-full aspect-[16/9] object-cover opacity-65"
+        className="w-full aspect-[16/9] object-contain opacity-65"
       />
       <img
         src={PharmaCheckPicture}
         alt="PharmaCheck Picture"
-        className="w-full aspect-[16/9] object-cover opacity-65"
+        className="w-full aspect-[16/9] object-contain opacity-65"
       />
       <img
         src={SudokuBoviPicture}
         alt="SudokuBovi Picture"
-        className="w-full aspect-[16/9] object-cover opacity-65"
+        className="w-full aspect-[16/9] object-contain opacity-65"
       />
       <img
         src={TicTacToeBoviPicture}
         alt="TicTacToeBovi Picture"
-        className="w-full aspect-[16/9] object-cover opacity-65"
+        className="w-full aspect-[16/9] object-contain opacity-65"
       />
       <img
         src={InspireFlowPicture}
         alt="Inspire Flow Picture"
-        className="w-full aspect-[16/9] object-cover opacity-65"
+        className="w-full aspect-[16/9] object-contain opacity-65"
+      />
+      <img
+        src={BadmintonScorePicture}
+        alt="Badminton Score Picture"
+        className="w-full aspect-[16/9] object-contain opacity-65"
       />
     </Carousel>
   );
