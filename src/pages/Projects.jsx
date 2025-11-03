@@ -15,6 +15,7 @@ import PharmaCheckPicture from "../assets/images/projects/PharmaCheckPicture.png
 import SudokuBoviPicture from "../assets/images/projects/SudokuBoviPicture.png";
 import TicTacToeBoviPicture from "../assets/images/projects/TicTacToeBoviPicture.png";
 import InspireFlowPicture from "../assets/images/projects/InspireFlowPicture.png";
+import BadmintonScorePicture from "../assets/images/projects/BadmintonScorePicture.png";
 
 const Projects = () => {
   return (
@@ -130,7 +131,7 @@ const Projects = () => {
         <div className="absolute z-0 bottom-0 right-[-18%] md:w-2/3 overflow-hidden">
           <img
             src={TicTacToeBoviPicture}
-            alt="Screenshot of PharmaCheck"
+            alt="Screenshot of TicTacToe.Bovi"
             className="h-1/2 md:h-screen object-cover opacity-55"
           />
         </div>
@@ -154,6 +155,29 @@ const Projects = () => {
           <img
             src={InspireFlowPicture}
             alt="Screenshot of InspireFlow"
+            className="h-1/2 md:h-screen object-cover opacity-55"
+          />
+        </div>
+      </MyProject>
+      <MyProject
+        backgroundColor={"bg-primary"}
+        title={"Badminton Scoreboard"}
+        category={"Web Development"}
+        number={"07"}
+        positionNumber={"right"}
+        position={"start"}
+        description={
+          "A modern badminton scoreboard website (singles/doubles) using Next.js/Tailwind, deployed on Vercel. Features accurate BWF rules, live stats, point history, undo, and match summaries."
+        }
+        noSite={false}
+        linkSite={"https://badmintonscore-web.vercel.app/"}
+        linkGithub={"https://github.com/BoviliusMeidi/badmintonscore-web"}
+        languagePicture={NextJSTailwindVercel}
+      >
+        <div className="absolute z-0 bottom-0 right-[-18%] md:w-2/3 overflow-hidden">
+          <img
+            src={BadmintonScorePicture}
+            alt="Screenshot of Badminton Score"
             className="h-1/2 md:h-screen object-cover opacity-55"
           />
         </div>
