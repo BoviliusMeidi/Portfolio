@@ -1,6 +1,5 @@
-import React from "react";
 import { Typography, Button } from "@material-tailwind/react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export function Error() {
   const navigate = useNavigate();
