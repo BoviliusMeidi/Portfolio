@@ -16,12 +16,12 @@ const About = ({ imageSize, isHiddenLink, id }) => {
     <MainLayout backgroundColor={backgroundColor}>
       <div
         ref={aboutRef}
-        className={`relative flex flex-col py-28 md:py-0 md:justify-center items-center w-full gap-8 transition-opacity duration-500 ease-in-out ${
+        className={`relative flex bg-gradient-to-b from-[#4A0E2E] to-[#6A1F3A] flex-col px-6 md:px-12 lg:px-48 py-28 md:py-0 md:justify-center items-center w-full gap-8 transition-opacity duration-500 ease-in-out ${
           isVisible ? "animate-popin" : "opacity-50"
         }`}
         id={id}
       >
-        <div className="xl:absolute xl:left-0 xl:w-3/5">
+        <div className="xl:absolute xl:w-3/5">
           <img
             src={SkillHome}
             alt="Skill Home"

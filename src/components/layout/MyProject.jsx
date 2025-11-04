@@ -27,7 +27,7 @@ const MyProject = ({
     <MainLayout backgroundColor={backgroundColor}>
       <div
         ref={projectRef}
-        className={`flex flex-col py-6 md:py-0  md:gap-8 gap-4 justify-start md:justify-center items-${position}`}
+        className={`flex flex-col px-6 md:px-12 lg:px-48  py-6 md:py-0  md:gap-8 gap-4 justify-start md:justify-center items-${position}`}
       >
         <div
           className={`z-10 transition-opacity ease-in-out ${

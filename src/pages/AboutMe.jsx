@@ -23,7 +23,7 @@ const AboutMe = () => {
       <About imageSize={"h-72 md:h-128"} isHiddenLink={true}/>
       <MainLayout backgroundColor={"bg-secondary"}>
         <div ref={aboutRef}
-        className={`flex justify-end md:justify-center mb-32 md:mt-0 flex-col items-start gap-0 z-10 transition-opacity duration-500 ease-in-out ${
+        className={`flex justify-end md:justify-center px-6 md:px-12 lg:px-48 mb-32 md:mt-0 flex-col items-start gap-0 z-10 transition-opacity duration-500 ease-in-out ${
           isVisible ? "animate-slideout" : "opacity-50"
         }`}>
           <Title title={"WHO I AM"} />
@@ -54,7 +54,7 @@ const AboutMe = () => {
       </MainLayout>
       <MainLayout backgroundColor={"bg-primary"}>
         <div ref={skillRef}
-        className={`w-full flex flex-col items-center md:block transition-opacity duration-500 ease-in-out ${
+        className={`w-full flex flex-col px-6 md:px-12 lg:px-48 items-center md:block transition-opacity duration-500 ease-in-out ${
           isVisible2 ? "animate-popout" : "opacity-50"
         }`}>
           <div className="flex justify-start w-full mt-20 md:mt-32 flex-col items-end gap-0 z-10">

@@ -11,12 +11,12 @@ import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 const Project = ({ imageSize, isHiddenLink, id }) => {
   const projectRef = useRef(null);
   const isVisible = useIntersectionObserver(projectRef, { threshold: 0.1 });
-  const backgroundColor = "bg-secondary";
+  const backgroundColor = "bg-primary";
   return (
     <MainLayout backgroundColor={backgroundColor}>
       <div
         ref={projectRef}
-        className={`relative flex flex-col py-28 md:py-0 justify-normal md:justify-center items-center w-full gap-2 transition-opacity duration-500 ease-in-out ${
+        className={`relative flex flex-col bg-gradient-to-b from-[#000] to-[#4A0E2E] px-6 md:px-12 lg:px-48 py-28 md:py-0 justify-normal md:justify-center items-center w-full gap-2 transition-opacity duration-500 ease-in-out ${
           isVisible ? "animate-popin" : "opacity-0"
         }`}
         id={id}
