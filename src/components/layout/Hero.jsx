@@ -10,7 +10,7 @@ const Hero = ({ id }) => {
   return (
     <MainLayout backgroundColor={backgroundColor} center={true}>
       <div
-        className="flex flex-col py-28 w-full h-full md:py-0 md:justify-center items-center third-font gradient-and-dragon-bg"
+        className="flex flex-col py-28 w-full h-full md:py-0 md:justify-center items-center third-font gradient-and-dragonright-bg"
         id={id}
       >
         <div className="flex lg:flex-row justify-center items-center md:items-start lg:gap-12 flex-col gap-2 w-full transition-opacity duration-500 ease-in-out animate-popin">
@@ -59,7 +59,7 @@ const Hero = ({ id }) => {
             <div className="flex justify-end mr-6 sm:mr-0">
               <a
                 href="/CV.pdf"
-                className="flex justify-center text-base sm:text-2xl items-center gap-2 sm:gap-4 px-6 sm:px-12 py-3 sm:py-6 rounded-3xl cursor-pointer no-underline text-white second-font-black letter-spacing-5 transition-colors duration-400 bg-gray-900 hover:bg-rightBar hover:text-black w-fit"
+                className="flex justify-center text-base sm:text-2xl items-center gap-2 sm:gap-4 px-6 sm:px-12 py-3 sm:py-6 rounded-3xl cursor-pointer no-underline text-white second-font-black letter-spacing-5 transition-colors duration-400 bg-[#00473E] hover:bg-rightBar w-fit"
               >
                 <span>Download CV</span>
                 <img

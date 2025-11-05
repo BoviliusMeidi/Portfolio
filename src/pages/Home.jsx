@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <Hero id="hero"/>
-      <Project id="projects" imageSize={"xl:w-2/4"} isHiddenLink={false}/>
-      <About id="about" imageSize={"h-72 md:h-96"}/>
-      <Contact id="contact"/>
+      <Hero id="hero" />
+      <Project id="projects" isHiddenLink={false} />
+      <About id="about" />
+      <Contact id="contact" />
       <Footer />
     </>
   );
