@@ -15,42 +15,42 @@ export function CarouselTransition() {
       loop={true}
       prevArrow={() => <IconButton className="hidden"><span/></IconButton>}
       nextArrow={() => <IconButton className="hidden"><span/></IconButton>}
-      className="rounded-xl relative z-0"
+      className="w-full h-full"
     >
       <img
         src={WayToRinjaniPicture}
         alt="Way To Rinjani Picture"
-        className="w-full aspect-[16/9] object-contain opacity-65"
+        className="w-full aspect-[16/9] object-contain opacity-75"
       />
       <img
         src={GoDecPicture}
         alt="GoDec Picture"
-        className="w-full aspect-[16/9] object-contain opacity-65"
+        className="w-full aspect-[16/9] object-contain opacity-75"
       />
       <img
         src={PharmaCheckPicture}
         alt="PharmaCheck Picture"
-        className="w-full aspect-[16/9] object-contain opacity-65"
+        className="w-full aspect-[16/9] object-contain opacity-75"
       />
       <img
         src={SudokuBoviPicture}
         alt="SudokuBovi Picture"
-        className="w-full aspect-[16/9] object-contain opacity-65"
+        className="w-full aspect-[16/9] object-contain opacity-75"
       />
       <img
         src={TicTacToeBoviPicture}
         alt="TicTacToeBovi Picture"
-        className="w-full aspect-[16/9] object-contain opacity-65"
+        className="w-full aspect-[16/9] object-contain opacity-75"
       />
       <img
         src={InspireFlowPicture}
         alt="Inspire Flow Picture"
-        className="w-full aspect-[16/9] object-contain opacity-65"
+        className="w-full aspect-[16/9] object-contain opacity-75"
       />
       <img
         src={BadmintonScorePicture}
         alt="Badminton Score Picture"
-        className="w-full aspect-[16/9] object-contain opacity-65"
+        className="w-full aspect-[16/9] object-contain opacity-75"
       />
     </Carousel>
   );

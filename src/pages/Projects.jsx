@@ -21,7 +21,7 @@ const Projects = () => {
   return (
     <>
       <Navbar />
-      <Project imageSize={"xl:w-2/3"} isHiddenLink={true} />
+      <Project imageSize={"xl:w-full"} isHiddenLink={true} />
       <MyProject
         backgroundColor={"bg-primary"}
         title={"Way To Rinjani"}

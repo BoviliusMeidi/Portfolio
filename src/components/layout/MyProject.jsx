@@ -23,10 +23,16 @@ const MyProject = ({
 }) => {
   const projectRef = useRef(null);
   const isVisible = useIntersectionObserver(projectRef, { threshold: 0.1 });
+
+  const formatId = (text) => {
+    if (!text) return ""; // Pengaman jika title kosong
+    return text.trim().toLowerCase().replace(/\s+/g, "-");
+  };
   return (
     <MainLayout backgroundColor={backgroundColor}>
       <div
         ref={projectRef}
+        id={formatId(title)}
         className={`flex flex-col px-6 md:px-12 lg:px-48  py-6 md:py-0  md:gap-8 gap-4 justify-start md:justify-center items-${position}`}
       >
         <div
