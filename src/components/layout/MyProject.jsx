@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import { useRef } from "react";
-import Title from "../common/Title";
 import SubTitle from "../common/SubTitle";
 import Link from "../common/Link";
 import MainLayout from "./MainLayout";
@@ -25,7 +24,7 @@ const MyProject = ({
   const isVisible = useIntersectionObserver(projectRef, { threshold: 0.1 });
 
   const formatId = (text) => {
-    if (!text) return ""; // Pengaman jika title kosong
+    if (!text) return "";
     return text.trim().toLowerCase().replace(/\s+/g, "-");
   };
   return (
@@ -41,7 +40,17 @@ const MyProject = ({
           }`}
         >
           <div className={`flex flex-col gap-0 items-${position} z-10`}>
-            <Title title={title} noMargin={true} />
+            <a href={linkSite ? linkSite : linkGithub} className="group third-font relative inline-block overflow-hidden">
+              <h1 className="text-5xl font-bold md:text-7xl lg:text-[7rem] transition-transform duration-500 ease-in-out group-hover:-translate-y-full">
+                {title}
+              </h1>
+              <h1
+                className="text-5xl font-bold md:text-7xl lg:text-[7rem] transition-transform duration-500 ease-in-out absolute top-full left-0 group-hover:-translate-y-full"
+                aria-hidden="true"
+              >
+                {title}
+              </h1>
+            </a>
             <SubTitle subTitle={category} />
           </div>
           <div
@@ -87,7 +96,7 @@ const MyProject = ({
         <img
           src={languagePicture}
           alt="Programming Language Used"
-          className={`z-10 transition-opacity ease-in-out w-40 md:w-auto ${
+          className={`z-10 transition-opacity ease-in-out bg-white p-4 rounded-xl w-40 md:w-auto ${
             isVisible ? "animate-popin" : "opacity-50"
           }`}
         />
