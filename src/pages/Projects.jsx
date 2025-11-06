@@ -17,13 +17,16 @@ import TicTacToeBoviPicture from "../assets/images/projects/TicTacToeBoviPicture
 import InspireFlowPicture from "../assets/images/projects/InspireFlowPicture.png";
 import BadmintonScorePicture from "../assets/images/projects/BadmintonScorePicture.png";
 
+const backgroundColorLeft = "bg-gradient-to-l from-[#000] to-[#4A0E2E]";
+const backgroundColorRight = "bg-gradient-to-r from-[#000] to-[#4A0E2E]";
+
 const Projects = () => {
   return (
     <>
       <Navbar />
       <Project imageSize={"xl:w-full"} isHiddenLink={true} />
       <MyProject
-        backgroundColor={"bg-primary"}
+        backgroundColor={backgroundColorLeft}
         title={"Way To Rinjani"}
         category={"Web Development | Front End"}
         number={"01"}
@@ -46,7 +49,7 @@ const Projects = () => {
         </div>
       </MyProject>
       <MyProject
-        backgroundColor={"bg-secondary"}
+        backgroundColor={backgroundColorRight}
         title={"GoDec"}
         category={"Mobile Development"}
         number={"02"}
@@ -68,7 +71,7 @@ const Projects = () => {
         </div>
       </MyProject>
       <MyProject
-        backgroundColor={"bg-primary"}
+        backgroundColor={backgroundColorLeft}
         title={"PharmaCheck"}
         category={"Software Development"}
         number={"03"}
@@ -91,14 +94,14 @@ const Projects = () => {
         </div>
       </MyProject>
       <MyProject
-        backgroundColor={"bg-secondary"}
+        backgroundColor={backgroundColorRight}
         title={"Sudoku.Bovi"}
         category={"Web Development"}
         number={"04"}
         positionNumber={"left"}
         position={"end"}
         description={
-          "Sudoku.Bovi is a web-based Sudoku game built with Next.js and Tailwind CSS, showcasing my skills in responsive design and interactive UI development. Deployed on Vercel, it offers a smooth puzzle experience across devices."
+          "Sudoku.Bovi is a web application that delivers a classic Sudoku puzzle with a smooth, interactive user experience. This project highlights responsive design skills, ensuring the game is fully playable across all devices, from mobile phones to desktops."
         }
         noSite={false}
         linkSite={"https://sudoku-web-psi.vercel.app/"}
@@ -114,14 +117,14 @@ const Projects = () => {
         </div>
       </MyProject>
       <MyProject
-        backgroundColor={"bg-primary"}
+        backgroundColor={backgroundColorLeft}
         title={"TicTacToe.Bovi"}
         category={"Web Development"}
         number={"05"}
         positionNumber={"right"}
         position={"start"}
         description={
-          "TicTacToe.Bovi is a web-based TicTacToe game built with Next.js and Tailwind CSS, showcasing my skills in responsive design and interactive UI development. Deployed on Vercel, it offers a smooth puzzle experience across devices."
+          "A classic web-based TicTacToe game, built to demonstrate responsive design and interactive UI development. This project offers a smooth and seamless puzzle experience across all devices, from mobile to desktop."
         }
         noSite={false}
         linkSite={"https://tictactoe-web-nine.vercel.app/"}
@@ -137,14 +140,14 @@ const Projects = () => {
         </div>
       </MyProject>
       <MyProject
-        backgroundColor={"bg-secondary"}
+        backgroundColor={backgroundColorRight}
         title={"InspireFlow"}
         category={"Web Development"}
         number={"06"}
         positionNumber={"left"}
         position={"end"}
         description={
-          "InspireFlow Web is a minimalist and elegant web application that displays daily and random inspirational quotes to brighten your day.Built with Next.js, and Tailwind CSS, it offers a smooth, responsive experience designed to motivate and uplift users with every visit."
+          "InspireFlow Web is a minimalist and elegant web-based designed to motivate and uplift. It fetches daily and random inspirational quotes directly from the ZenQuotes.io API, offering a smooth, responsive experience to brighten your day with every visit."
         }
         noSite={false}
         linkSite={"https://inspireflow-web.vercel.app/"}
@@ -160,14 +163,14 @@ const Projects = () => {
         </div>
       </MyProject>
       <MyProject
-        backgroundColor={"bg-primary"}
+        backgroundColor={backgroundColorLeft}
         title={"Badminton Scoreboard"}
         category={"Web Development"}
         number={"07"}
         positionNumber={"right"}
         position={"start"}
         description={
-          "A modern badminton scoreboard website (singles/doubles) using Next.js/Tailwind, deployed on Vercel. Features accurate BWF rules, live stats, point history, undo, and match summaries."
+          "A modern digital badminton scoreboard for singles and doubles matches. Built with BWF rule accuracy, this app provides live stats, point history, an undo feature, and match summaries for post-game analysis."
         }
         noSite={false}
         linkSite={"https://badmintonscore-web.vercel.app/"}
